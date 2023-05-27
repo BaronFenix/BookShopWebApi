@@ -1,0 +1,10 @@
+{
+  "ShopSettings": {
+    "Name":  "Books World"
+  },
+  "PriceSettings": {
+    "MinPrice": "500",
+    "MaxPrice": "150000"
+  }
+
+}

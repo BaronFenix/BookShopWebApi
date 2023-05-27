@@ -1,0 +1,194 @@
+05/26/2023 23:20:19 +06:00 Adding services
+05/26/2023 23:20:29 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/26/2023 23:20:37 +06:00 Now listening on: "https://localhost:7087"
+05/26/2023 23:20:37 +06:00 Now listening on: "http://localhost:5087"
+05/26/2023 23:20:37 +06:00 Application started. Press Ctrl+C to shut down.
+05/26/2023 23:20:37 +06:00 Hosting environment: "Development"
+05/26/2023 23:20:37 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/26/2023 23:20:48 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/26/2023 23:20:51 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/26/2023 23:20:51 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 3570.2656ms
+05/26/2023 23:20:51 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 118.9862ms
+05/26/2023 23:20:52 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/26/2023 23:20:52 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 539.1170ms
+05/26/2023 23:20:52 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/26/2023 23:20:53 +06:00 An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET GetSortedBooksData" for actions - BookShopApi.Controllers.BooksController.BookParser (BookShopApi),BookShopApi.Controllers.BooksController.PriceParses (BookShopApi). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+05/26/2023 23:20:54 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 1604.9414ms
+05/26/2023 23:22:08 +06:00 Adding services
+05/26/2023 23:22:09 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/26/2023 23:22:09 +06:00 Now listening on: "https://localhost:7087"
+05/26/2023 23:22:09 +06:00 Now listening on: "http://localhost:5087"
+05/26/2023 23:22:09 +06:00 Application started. Press Ctrl+C to shut down.
+05/26/2023 23:22:09 +06:00 Hosting environment: "Development"
+05/26/2023 23:22:09 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/26/2023 23:22:10 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/26/2023 23:22:10 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/26/2023 23:22:10 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 9.3471ms
+05/26/2023 23:22:10 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 497.0007ms
+05/26/2023 23:22:10 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/26/2023 23:22:10 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 100.2697ms
+05/26/2023 23:22:10 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/26/2023 23:22:11 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 382.8425ms
+05/26/2023 23:25:22 +06:00 Adding services
+05/26/2023 23:25:22 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/26/2023 23:25:23 +06:00 Now listening on: "https://localhost:7087"
+05/26/2023 23:25:23 +06:00 Now listening on: "http://localhost:5087"
+05/26/2023 23:25:23 +06:00 Application started. Press Ctrl+C to shut down.
+05/26/2023 23:25:23 +06:00 Hosting environment: "Development"
+05/26/2023 23:25:23 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/26/2023 23:25:23 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/26/2023 23:25:24 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/26/2023 23:25:24 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/26/2023 23:25:24 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 16.3933ms
+05/26/2023 23:25:24 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 931.7662ms
+05/26/2023 23:25:24 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 97.6515ms
+05/26/2023 23:25:25 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/26/2023 23:25:25 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 343.1907ms
+05/26/2023 23:28:09 +06:00 Adding services
+05/26/2023 23:28:10 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/26/2023 23:28:10 +06:00 Now listening on: "https://localhost:7087"
+05/26/2023 23:28:10 +06:00 Now listening on: "http://localhost:5087"
+05/26/2023 23:28:10 +06:00 Application started. Press Ctrl+C to shut down.
+05/26/2023 23:28:10 +06:00 Hosting environment: "Development"
+05/26/2023 23:28:10 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/26/2023 23:28:11 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/26/2023 23:28:12 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/26/2023 23:28:12 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/26/2023 23:28:12 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 7.6262ms
+05/26/2023 23:28:12 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 475.8357ms
+05/26/2023 23:28:12 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 122.9412ms
+05/26/2023 23:28:12 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/26/2023 23:28:12 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 298.8197ms
+05/26/2023 23:30:57 +06:00 Adding services
+05/26/2023 23:30:58 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/26/2023 23:30:59 +06:00 Now listening on: "https://localhost:7087"
+05/26/2023 23:30:59 +06:00 Now listening on: "http://localhost:5087"
+05/26/2023 23:30:59 +06:00 Application started. Press Ctrl+C to shut down.
+05/26/2023 23:30:59 +06:00 Hosting environment: "Development"
+05/26/2023 23:30:59 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/26/2023 23:31:03 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/26/2023 23:31:04 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/26/2023 23:31:04 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 708.0869ms
+05/26/2023 23:31:04 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 26.8312ms
+05/26/2023 23:31:04 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/26/2023 23:31:04 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 203.8875ms
+05/26/2023 23:31:04 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/26/2023 23:31:04 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 313.6661ms
+05/26/2023 23:31:35 +06:00 Request starting HTTP/2 GET https://localhost:7087/Home/AllGenres - -
+05/26/2023 23:31:35 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetGenres (BookShopApi)"'
+05/26/2023 23:31:35 +06:00 Route matched with "{action = \"GetGenres\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookShop.Domain.Genre]]] GetGenres()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+05/26/2023 23:31:42 +06:00 successful request
+05/26/2023 23:31:43 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.Genre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+05/26/2023 23:31:44 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetGenres (BookShopApi)" in 8416.7523ms
+05/26/2023 23:31:44 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetGenres (BookShopApi)"'
+05/26/2023 23:31:44 +06:00 Request GET /Home/AllGenres completed in 8687 ms
+05/26/2023 23:31:44 +06:00 Request finished HTTP/2 GET https://localhost:7087/Home/AllGenres - - - 200 - application/json;+charset=utf-8 8805.8211ms
+05/26/2023 23:33:05 +06:00 Adding services
+05/26/2023 23:33:05 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/26/2023 23:33:06 +06:00 Now listening on: "https://localhost:7087"
+05/26/2023 23:33:06 +06:00 Now listening on: "http://localhost:5087"
+05/26/2023 23:33:06 +06:00 Application started. Press Ctrl+C to shut down.
+05/26/2023 23:33:06 +06:00 Hosting environment: "Development"
+05/26/2023 23:33:06 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/26/2023 23:33:08 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/26/2023 23:33:09 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/26/2023 23:33:09 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 9.4050ms
+05/26/2023 23:33:09 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1043.4462ms
+05/26/2023 23:33:09 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/26/2023 23:33:09 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 483.5742ms
+05/26/2023 23:33:09 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/26/2023 23:33:10 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 539.7532ms
+05/26/2023 23:33:30 +06:00 Request starting HTTP/2 GET https://localhost:7087/Genres - -
+05/26/2023 23:33:30 +06:00 Executing endpoint '"BookShopApi.Controllers.GenresController.Index (BookShopApi)"'
+05/26/2023 23:33:30 +06:00 Route matched with "{action = \"Index\", controller = \"Genres\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookShop.Domain.Genre]]] Index()" on controller "BookShopApi.Controllers.GenresController" ("BookShopApi").
+05/26/2023 23:33:33 +06:00 successull request
+05/26/2023 23:33:34 +06:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.Genre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+05/26/2023 23:33:34 +06:00 Executed action "BookShopApi.Controllers.GenresController.Index (BookShopApi)" in 4328.5414ms
+05/26/2023 23:33:34 +06:00 Executed endpoint '"BookShopApi.Controllers.GenresController.Index (BookShopApi)"'
+05/26/2023 23:33:34 +06:00 Request GET /Genres completed in 4416 ms
+05/26/2023 23:33:34 +06:00 Request finished HTTP/2 GET https://localhost:7087/Genres - - - 200 - application/json;+charset=utf-8 4474.6101ms
+05/26/2023 23:34:49 +06:00 Adding services
+05/26/2023 23:34:51 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/26/2023 23:34:51 +06:00 Now listening on: "https://localhost:7087"
+05/26/2023 23:34:51 +06:00 Now listening on: "http://localhost:5087"
+05/26/2023 23:34:51 +06:00 Application started. Press Ctrl+C to shut down.
+05/26/2023 23:34:51 +06:00 Hosting environment: "Development"
+05/26/2023 23:34:51 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/26/2023 23:34:52 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/26/2023 23:34:52 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/26/2023 23:34:52 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 8.2930ms
+05/26/2023 23:34:52 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 674.6960ms
+05/26/2023 23:34:52 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/26/2023 23:34:53 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.9584ms
+05/26/2023 23:34:53 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/26/2023 23:34:53 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 294.8222ms
+05/26/2023 23:35:34 +06:00 Request starting HTTP/2 GET https://localhost:7087/Home/NewBooks - -
+05/26/2023 23:35:34 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+05/26/2023 23:35:34 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+05/26/2023 23:35:37 +06:00 successful request
+05/26/2023 23:35:38 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+05/26/2023 23:35:38 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 4241.5669ms
+05/26/2023 23:35:38 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+05/26/2023 23:35:38 +06:00 Request GET /Home/NewBooks completed in 4304 ms
+05/26/2023 23:35:38 +06:00 Request finished HTTP/2 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 4338.1733ms
+05/26/2023 23:36:42 +06:00 Adding services
+05/26/2023 23:36:42 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/26/2023 23:36:43 +06:00 Now listening on: "https://localhost:7087"
+05/26/2023 23:36:43 +06:00 Now listening on: "http://localhost:5087"
+05/26/2023 23:36:43 +06:00 Application started. Press Ctrl+C to shut down.
+05/26/2023 23:36:43 +06:00 Hosting environment: "Development"
+05/26/2023 23:36:43 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/26/2023 23:36:43 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/26/2023 23:36:44 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/26/2023 23:36:44 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 960.5176ms
+05/26/2023 23:36:44 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 21.9021ms
+05/26/2023 23:36:44 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/26/2023 23:36:44 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 61.9280ms
+05/26/2023 23:36:44 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/26/2023 23:36:45 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 339.9960ms
+05/26/2023 23:36:57 +06:00 Request starting HTTP/2 GET https://localhost:7087/Home/AllGenres - -
+05/26/2023 23:36:57 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetGenres (BookShopApi)"'
+05/26/2023 23:36:57 +06:00 Route matched with "{action = \"GetGenres\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BookShop.Domain.Genre]]] GetGenres()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+05/26/2023 23:37:01 +06:00 successful request
+05/26/2023 23:37:02 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.Genre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+05/26/2023 23:37:02 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetGenres (BookShopApi)" in 4889.6183ms
+05/26/2023 23:37:02 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetGenres (BookShopApi)"'
+05/26/2023 23:37:02 +06:00 Request GET /Home/AllGenres completed in 4993 ms
+05/26/2023 23:37:02 +06:00 Request finished HTTP/2 GET https://localhost:7087/Home/AllGenres - - - 200 - application/json;+charset=utf-8 5049.5608ms
+05/26/2023 23:39:16 +06:00 Adding services
+05/26/2023 23:39:27 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/26/2023 23:39:34 +06:00 Now listening on: "https://localhost:7087"
+05/26/2023 23:39:34 +06:00 Now listening on: "http://localhost:5087"
+05/26/2023 23:39:34 +06:00 Application started. Press Ctrl+C to shut down.
+05/26/2023 23:39:34 +06:00 Hosting environment: "Development"
+05/26/2023 23:39:34 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/26/2023 23:39:35 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/26/2023 23:39:35 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/26/2023 23:39:35 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 485.1325ms
+05/26/2023 23:39:35 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 6.4469ms
+05/26/2023 23:39:35 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/26/2023 23:39:35 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 144.9660ms
+05/26/2023 23:39:35 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/26/2023 23:39:36 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 253.6113ms
+05/26/2023 23:40:00 +06:00 Request starting HTTP/2 POST https://localhost:7087/Home/UploadFile multipart/form-data;+boundary=----WebKitFormBoundaryW0GHSVma3hkgBlDM 373
+05/26/2023 23:40:00 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.UploadSingleFile (BookShopApi)"'
+05/26/2023 23:40:00 +06:00 Route matched with "{action = \"UploadSingleFile\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadSingleFile(Microsoft.AspNetCore.Http.IFormFile)" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+05/26/2023 23:40:31 +06:00 Executing StatusCodeResult, setting HTTP status code 200
+05/26/2023 23:40:31 +06:00 Executed action "BookShopApi.Controllers.HomeController.UploadSingleFile (BookShopApi)" in 30650.8426ms
+05/26/2023 23:40:31 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.UploadSingleFile (BookShopApi)"'
+05/26/2023 23:40:34 +06:00 Request POST /Home/UploadFile completed in 33130 ms
+05/26/2023 23:40:35 +06:00 Request finished HTTP/2 POST https://localhost:7087/Home/UploadFile multipart/form-data;+boundary=----WebKitFormBoundaryW0GHSVma3hkgBlDM 373 - 200 0 - 34932.9352ms
+05/26/2023 23:40:57 +06:00 Request starting HTTP/2 POST https://localhost:7087/Home/UploadFile multipart/form-data;+boundary=----WebKitFormBoundaryT0ARCB60Iq2AteKM 373
+05/26/2023 23:41:09 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.UploadSingleFile (BookShopApi)"'
+05/26/2023 23:41:09 +06:00 Route matched with "{action = \"UploadSingleFile\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] UploadSingleFile(Microsoft.AspNetCore.Http.IFormFile)" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+05/26/2023 23:41:14 +06:00 Executing StatusCodeResult, setting HTTP status code 200
+05/26/2023 23:41:14 +06:00 Executed action "BookShopApi.Controllers.HomeController.UploadSingleFile (BookShopApi)" in 4493.619ms
+05/26/2023 23:41:14 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.UploadSingleFile (BookShopApi)"'
+05/26/2023 23:41:14 +06:00 Request POST /Home/UploadFile completed in 4494 ms
+05/26/2023 23:41:14 +06:00 Request finished HTTP/2 POST https://localhost:7087/Home/UploadFile multipart/form-data;+boundary=----WebKitFormBoundaryT0ARCB60Iq2AteKM 373 - 200 0 - 16741.8564ms

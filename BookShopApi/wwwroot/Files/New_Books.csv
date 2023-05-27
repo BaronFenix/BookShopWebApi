@@ -1,0 +1,6 @@
+﻿BookTitle,BookDescription,Pages,PublisedYear,PublishName,ImageUrl,GenreName,AuthorName,AuthorSurname
+Test Book 1,Someone Text,123,2020,АСТ,https://s1.livelib.ru/boocover/1000966838/200x305/7df1/boocover.jpg,Романы,Дон,Пардон
+Test Book 2,Someone Text,452,2020,АСТ,https://s1.livelib.ru/boocover/1000966838/200x305/7df1/boocover.jpg,Жанриссимо,Маргарет,Митчелл
+Test Book 3,Someone Text,124,2020,АСТ,https://s1.livelib.ru/boocover/1000966838/200x305/7df1/boocover.jpg,Романы,Маргарет,Митчелл
+Test Book 4,Someone Text,456,2020,АСТ,https://s1.livelib.ru/boocover/1000966838/200x305/7df1/boocover.jpg,Детектив,Агата,Кристи
+Test Book 5,Someone Text,124,2020,АСТ,https://s1.livelib.ru/boocover/1000966838/200x305/7df1/boocover.jpg,Детектив,Агата,Кристи

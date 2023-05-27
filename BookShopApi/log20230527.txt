@@ -1,0 +1,209 @@
+05/27/2023 01:19:12 +06:00 Adding services
+05/27/2023 01:19:15 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/27/2023 01:19:19 +06:00 Now listening on: "https://localhost:7087"
+05/27/2023 01:19:19 +06:00 Now listening on: "http://localhost:5087"
+05/27/2023 01:19:19 +06:00 Application started. Press Ctrl+C to shut down.
+05/27/2023 01:19:19 +06:00 Hosting environment: "Development"
+05/27/2023 01:19:19 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/27/2023 01:19:20 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/27/2023 01:19:22 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/27/2023 01:19:22 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 172.0884ms
+05/27/2023 01:19:22 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1447.5301ms
+05/27/2023 01:19:22 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/27/2023 01:19:22 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 94.7659ms
+05/27/2023 01:19:22 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/27/2023 01:19:23 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 586.3109ms
+05/27/2023 01:19:47 +06:00 Request starting HTTP/2 GET https://localhost:7087/GetPrices - -
+05/27/2023 01:19:47 +06:00 Executing endpoint '"BookShopApi.Controllers.BooksController.Price (BookShopApi)"'
+05/27/2023 01:19:48 +06:00 Route matched with "{action = \"Price\", controller = \"Books\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.Price]]] Price()" on controller "BookShopApi.Controllers.BooksController" ("BookShopApi").
+05/27/2023 01:19:54 +06:00 Successuful request
+05/27/2023 01:19:55 +06:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.Price, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+05/27/2023 01:19:55 +06:00 Executed action "BookShopApi.Controllers.BooksController.Price (BookShopApi)" in 7688.4971ms
+05/27/2023 01:19:55 +06:00 Executed endpoint '"BookShopApi.Controllers.BooksController.Price (BookShopApi)"'
+05/27/2023 01:19:55 +06:00 Request GET /GetPrices completed in 7982 ms
+05/27/2023 01:19:55 +06:00 Request finished HTTP/2 GET https://localhost:7087/GetPrices - - - 200 - application/json;+charset=utf-8 8111.9289ms
+05/27/2023 01:22:00 +06:00 Adding services
+05/27/2023 01:22:01 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/27/2023 01:22:01 +06:00 Now listening on: "https://localhost:7087"
+05/27/2023 01:22:01 +06:00 Now listening on: "http://localhost:5087"
+05/27/2023 01:22:01 +06:00 Application started. Press Ctrl+C to shut down.
+05/27/2023 01:22:02 +06:00 Hosting environment: "Development"
+05/27/2023 01:22:02 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/27/2023 01:22:02 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/27/2023 01:22:03 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/27/2023 01:22:03 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 8.8833ms
+05/27/2023 01:22:03 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 961.7371ms
+05/27/2023 01:22:03 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/27/2023 01:22:03 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 88.1848ms
+05/27/2023 01:22:03 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/27/2023 01:22:04 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 363.1952ms
+05/27/2023 01:22:14 +06:00 Request starting HTTP/2 GET https://localhost:7087/GetPrices - -
+05/27/2023 01:22:14 +06:00 Executing endpoint '"BookShopApi.Controllers.BooksController.Price (BookShopApi)"'
+05/27/2023 01:22:15 +06:00 Route matched with "{action = \"Price\", controller = \"Books\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.Price]]] Price()" on controller "BookShopApi.Controllers.BooksController" ("BookShopApi").
+05/27/2023 01:22:18 +06:00 Successuful request
+05/27/2023 01:22:19 +06:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.Price, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+05/27/2023 01:22:19 +06:00 Executed action "BookShopApi.Controllers.BooksController.Price (BookShopApi)" in 4433.7809ms
+05/27/2023 01:22:19 +06:00 Executed endpoint '"BookShopApi.Controllers.BooksController.Price (BookShopApi)"'
+05/27/2023 01:22:19 +06:00 Request GET /GetPrices completed in 4526 ms
+05/27/2023 01:22:19 +06:00 Request finished HTTP/2 GET https://localhost:7087/GetPrices - - - 200 - application/json;+charset=utf-8 4569.4436ms
+05/27/2023 01:26:41 +06:00 Adding services
+05/27/2023 01:26:42 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/27/2023 01:26:42 +06:00 Now listening on: "https://localhost:7087"
+05/27/2023 01:26:43 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/27/2023 01:26:43 +06:00 Now listening on: "http://localhost:5087"
+05/27/2023 01:26:43 +06:00 Application started. Press Ctrl+C to shut down.
+05/27/2023 01:26:43 +06:00 Hosting environment: "Development"
+05/27/2023 01:26:43 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/27/2023 01:26:44 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 871.8026ms
+05/27/2023 01:26:44 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/27/2023 01:26:44 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 7.7031ms
+05/27/2023 01:26:44 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/27/2023 01:26:44 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 151.7492ms
+05/27/2023 01:26:44 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/27/2023 01:26:44 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 387.9091ms
+05/27/2023 01:26:58 +06:00 Request starting HTTP/2 GET https://localhost:7087/GetPrices - -
+05/27/2023 01:26:58 +06:00 Executing endpoint '"BookShopApi.Controllers.BooksController.Price (BookShopApi)"'
+05/27/2023 01:26:58 +06:00 Route matched with "{action = \"Price\", controller = \"Books\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.Price]]] Price()" on controller "BookShopApi.Controllers.BooksController" ("BookShopApi").
+05/27/2023 01:27:02 +06:00 Successuful request
+05/27/2023 01:27:03 +06:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.Price, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+05/27/2023 01:27:03 +06:00 Executed action "BookShopApi.Controllers.BooksController.Price (BookShopApi)" in 4143.8671ms
+05/27/2023 01:27:03 +06:00 Executed endpoint '"BookShopApi.Controllers.BooksController.Price (BookShopApi)"'
+05/27/2023 01:27:03 +06:00 Request GET /GetPrices completed in 4226 ms
+05/27/2023 01:27:03 +06:00 Request finished HTTP/2 GET https://localhost:7087/GetPrices - - - 200 - application/json;+charset=utf-8 4285.5387ms
+05/27/2023 01:45:38 +06:00 Adding services
+05/27/2023 01:45:40 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/27/2023 01:45:43 +06:00 Now listening on: "https://localhost:7087"
+05/27/2023 01:45:43 +06:00 Now listening on: "http://localhost:5087"
+05/27/2023 01:45:43 +06:00 Application started. Press Ctrl+C to shut down.
+05/27/2023 01:45:43 +06:00 Hosting environment: "Development"
+05/27/2023 01:45:43 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/27/2023 01:45:44 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/27/2023 01:45:46 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/27/2023 01:45:46 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 23.4957ms
+05/27/2023 01:45:46 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1786.0914ms
+05/27/2023 01:45:46 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/27/2023 01:45:46 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 154.9679ms
+05/27/2023 01:45:46 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/27/2023 01:45:47 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 469.7710ms
+05/27/2023 01:46:01 +06:00 Request starting HTTP/2 GET https://localhost:7087/GetPrices - -
+05/27/2023 01:46:01 +06:00 Executing endpoint '"BookShopApi.Controllers.BooksController.Price (BookShopApi)"'
+05/27/2023 01:46:01 +06:00 Route matched with "{action = \"Price\", controller = \"Books\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.Price]]] Price()" on controller "BookShopApi.Controllers.BooksController" ("BookShopApi").
+05/27/2023 01:46:07 +06:00 Successuful request
+05/27/2023 01:46:09 +06:00 Executing "OkObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.Price, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+05/27/2023 01:46:09 +06:00 Executed action "BookShopApi.Controllers.BooksController.Price (BookShopApi)" in 7743.7136ms
+05/27/2023 01:46:09 +06:00 Executed endpoint '"BookShopApi.Controllers.BooksController.Price (BookShopApi)"'
+05/27/2023 01:46:09 +06:00 Request GET /GetPrices completed in 8049 ms
+05/27/2023 01:46:09 +06:00 Request finished HTTP/2 GET https://localhost:7087/GetPrices - - - 200 - application/json;+charset=utf-8 8232.4897ms
+05/27/2023 01:47:44 +06:00 Request starting HTTP/2 GET https://localhost:7087/UploadPricesToDbFromFile?fileName=Book_Prices - -
+05/27/2023 01:47:44 +06:00 Executing endpoint '"BookShopApi.Controllers.BooksController.PriceParses (BookShopApi)"'
+05/27/2023 01:47:44 +06:00 Route matched with "{action = \"PriceParses\", controller = \"Books\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PriceParses(System.String)" on controller "BookShopApi.Controllers.BooksController" ("BookShopApi").
+05/27/2023 01:47:45 +06:00 Executed action "BookShopApi.Controllers.BooksController.PriceParses (BookShopApi)" in 1633.092ms
+05/27/2023 01:47:45 +06:00 Executed endpoint '"BookShopApi.Controllers.BooksController.PriceParses (BookShopApi)"'
+05/27/2023 01:47:46 +06:00 Request GET /UploadPricesToDbFromFile completed in 1949 ms
+05/27/2023 01:47:46 +06:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no elements.
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at BookShop.Infrastructure.Repositories.PriceRepository.GetByBookId(Int32 bookId) in E:\2022\ASP\BookShopProject\BookShopApi\BookShop.Infrastructure\Repositories\PriceRepository.cs:line 22
+   at BookShopApi.Controllers.BooksController.PriceParses(String fileName) in E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\Controllers\BooksController.cs:line 231
+   at lambda_method124(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at BookShopApi.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\Middleware\RequestLoggingMiddleware.cs:line 23
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+05/27/2023 01:47:46 +06:00 Request finished HTTP/2 GET https://localhost:7087/UploadPricesToDbFromFile?fileName=Book_Prices - - - 500 - text/plain;+charset=utf-8 2728.8221ms
+05/27/2023 01:48:22 +06:00 Request starting HTTP/2 GET https://localhost:7087/UploadPricesToDbFromFile?fileName=Book_Prices - -
+05/27/2023 01:48:22 +06:00 Executing endpoint '"BookShopApi.Controllers.BooksController.PriceParses (BookShopApi)"'
+05/27/2023 01:48:22 +06:00 Route matched with "{action = \"PriceParses\", controller = \"Books\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PriceParses(System.String)" on controller "BookShopApi.Controllers.BooksController" ("BookShopApi").
+05/27/2023 01:48:23 +06:00 Executed action "BookShopApi.Controllers.BooksController.PriceParses (BookShopApi)" in 474.9603ms
+05/27/2023 01:48:23 +06:00 Executed endpoint '"BookShopApi.Controllers.BooksController.PriceParses (BookShopApi)"'
+05/27/2023 01:48:23 +06:00 Request GET /UploadPricesToDbFromFile completed in 649 ms
+05/27/2023 01:48:23 +06:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no elements.
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at BookShop.Infrastructure.Repositories.PriceRepository.GetByBookId(Int32 bookId) in E:\2022\ASP\BookShopProject\BookShopApi\BookShop.Infrastructure\Repositories\PriceRepository.cs:line 22
+   at BookShopApi.Controllers.BooksController.PriceParses(String fileName) in E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\Controllers\BooksController.cs:line 231
+   at lambda_method124(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at BookShopApi.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\Middleware\RequestLoggingMiddleware.cs:line 23
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+05/27/2023 01:48:23 +06:00 Request finished HTTP/2 GET https://localhost:7087/UploadPricesToDbFromFile?fileName=Book_Prices - - - 500 - text/plain;+charset=utf-8 653.8469ms
+05/27/2023 01:48:51 +06:00 Request starting HTTP/2 GET https://localhost:7087/UploadPricesToDbFromFile?fileName=Book_Prices - -
+05/27/2023 01:48:51 +06:00 Executing endpoint '"BookShopApi.Controllers.BooksController.PriceParses (BookShopApi)"'
+05/27/2023 01:48:51 +06:00 Route matched with "{action = \"PriceParses\", controller = \"Books\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PriceParses(System.String)" on controller "BookShopApi.Controllers.BooksController" ("BookShopApi").
+05/27/2023 01:50:09 +06:00 Executed action "BookShopApi.Controllers.BooksController.PriceParses (BookShopApi)" in 78692.6894ms
+05/27/2023 01:50:09 +06:00 Executed endpoint '"BookShopApi.Controllers.BooksController.PriceParses (BookShopApi)"'
+05/27/2023 01:50:15 +06:00 Request GET /UploadPricesToDbFromFile completed in 83245 ms
+05/27/2023 01:50:16 +06:00 An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: Sequence contains no elements.
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
+   at BookShop.Infrastructure.Repositories.PriceRepository.GetByBookId(Int32 bookId) in E:\2022\ASP\BookShopProject\BookShopApi\BookShop.Infrastructure\Repositories\PriceRepository.cs:line 22
+   at BookShopApi.Controllers.BooksController.PriceParses(String fileName) in E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\Controllers\BooksController.cs:line 231
+   at lambda_method124(Closure , Object )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at BookShopApi.Middleware.RequestLoggingMiddleware.InvokeAsync(HttpContext context) in E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\Middleware\RequestLoggingMiddleware.cs:line 23
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+05/27/2023 01:50:16 +06:00 Request finished HTTP/2 GET https://localhost:7087/UploadPricesToDbFromFile?fileName=Book_Prices - - - 500 - text/plain;+charset=utf-8 84854.0994ms
+05/27/2023 18:15:03 +06:00 Adding services
+05/27/2023 18:15:05 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+05/27/2023 18:15:08 +06:00 Now listening on: "https://localhost:7087"
+05/27/2023 18:15:08 +06:00 Now listening on: "http://localhost:5087"
+05/27/2023 18:15:08 +06:00 Application started. Press Ctrl+C to shut down.
+05/27/2023 18:15:08 +06:00 Hosting environment: "Development"
+05/27/2023 18:15:08 +06:00 Content root path: "E:\2022\ASP\BookShopProject\BookShopApi\BookShopApi\"
+05/27/2023 18:15:10 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+05/27/2023 18:15:13 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 3076.1948ms
+05/27/2023 18:15:13 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+05/27/2023 18:15:13 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 25.6470ms
+05/27/2023 18:15:14 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+05/27/2023 18:15:14 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 181.0648ms
+05/27/2023 18:15:14 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+05/27/2023 18:15:15 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 923.5859ms
+05/27/2023 18:15:36 +06:00 Request starting HTTP/2 GET https://localhost:7087/UploadPricesToDbFromFile?fileName=Book_prices - -
+05/27/2023 18:15:36 +06:00 Executing endpoint '"BookShopApi.Controllers.BooksController.PriceParses (BookShopApi)"'
+05/27/2023 18:15:37 +06:00 Route matched with "{action = \"PriceParses\", controller = \"Books\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult] PriceParses(System.String)" on controller "BookShopApi.Controllers.BooksController" ("BookShopApi").
+05/27/2023 18:17:33 +06:00 Executing StatusCodeResult, setting HTTP status code 200
+05/27/2023 18:17:33 +06:00 Executed action "BookShopApi.Controllers.BooksController.PriceParses (BookShopApi)" in 116574.0986ms
+05/27/2023 18:17:33 +06:00 Executed endpoint '"BookShopApi.Controllers.BooksController.PriceParses (BookShopApi)"'
+05/27/2023 18:17:33 +06:00 Request GET /UploadPricesToDbFromFile completed in 117202 ms
+05/27/2023 18:17:33 +06:00 Request finished HTTP/2 GET https://localhost:7087/UploadPricesToDbFromFile?fileName=Book_prices - - - 200 0 - 117293.4217ms
