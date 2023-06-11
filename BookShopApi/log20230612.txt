@@ -1,0 +1,580 @@
+06/12/2023 01:32:18 +06:00 Adding system services
+06/12/2023 01:32:19 +06:00 Adding custom services
+06/12/2023 01:32:26 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06/12/2023 01:32:30 +06:00 Initializing UI Database
+06/12/2023 01:32:36 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:32:37 +06:00 Saving healthchecks configuration to database
+06/12/2023 01:32:37 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:32:40 +06:00 Now listening on: "https://localhost:7087"
+06/12/2023 01:32:40 +06:00 Now listening on: "http://localhost:5087"
+06/12/2023 01:32:40 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:32:41 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:32:41 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:32:41 +06:00 Application started. Press Ctrl+C to shut down.
+06/12/2023 01:32:41 +06:00 Hosting environment: "Development"
+06/12/2023 01:32:41 +06:00 Content root path: "E:\2023\ASP\BookShopProject\BookShopApi\BookShopApi\"
+06/12/2023 01:32:44 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:32:45 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:32:45 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:32:45 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:32:45 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:32:45 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:32:45 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:32:50 +06:00 successful request
+06/12/2023 01:32:51 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:32:52 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 6261.2988ms
+06/12/2023 01:32:52 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:32:52 +06:00 Request GET /Home/NewBooks completed in 6320 ms
+06/12/2023 01:32:52 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 6353.7225ms
+06/12/2023 01:32:52 +06:00 Received HTTP response headers after 6585.8609ms - 200
+06/12/2023 01:32:52 +06:00 End processing HTTP request after 6593.5514ms - 200
+06/12/2023 01:32:52 +06:00 Health check "RequestTimeCheck" with status Unhealthy completed after 6619.8302ms with message '"Все плохо"'
+06/12/2023 01:32:52 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:32:52 +06:00 Request GET /health completed in 6742 ms
+06/12/2023 01:32:52 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 503 - application/json 7912.8775ms
+06/12/2023 01:32:52 +06:00 Received HTTP response headers after 10836.7105ms - 503
+06/12/2023 01:32:52 +06:00 End processing HTTP request after 10852.435ms - 503
+06/12/2023 01:32:52 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:32:52 +06:00 Saved 6 entities to in-memory store.
+06/12/2023 01:32:59 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+06/12/2023 01:33:00 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+06/12/2023 01:33:00 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1032.7181ms
+06/12/2023 01:33:00 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+06/12/2023 01:33:00 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 355.7466ms
+06/12/2023 01:33:01 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 706.5082ms
+06/12/2023 01:33:01 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+06/12/2023 01:33:02 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 566.7664ms
+06/12/2023 01:33:07 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:33:07 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:33:07 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:33:07 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:33:07 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:33:07 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:33:07 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:33:07 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:33:07 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:33:07 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:33:07 +06:00 successful request
+06/12/2023 01:33:07 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:33:07 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 13.0741ms
+06/12/2023 01:33:07 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:33:07 +06:00 Request GET /Home/NewBooks completed in 13 ms
+06/12/2023 01:33:07 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 19.6060ms
+06/12/2023 01:33:07 +06:00 Received HTTP response headers after 21.9872ms - 200
+06/12/2023 01:33:07 +06:00 End processing HTTP request after 22.7202ms - 200
+06/12/2023 01:33:07 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:33:07 +06:00 Request GET /health completed in 83 ms
+06/12/2023 01:33:07 +06:00 Received HTTP response headers after 85.7232ms - 200
+06/12/2023 01:33:07 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 85.3017ms
+06/12/2023 01:33:07 +06:00 End processing HTTP request after 85.9821ms - 200
+06/12/2023 01:33:07 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:33:07 +06:00 Saved 7 entities to in-memory store.
+06/12/2023 01:33:22 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:33:22 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:33:22 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:33:22 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:33:22 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:33:22 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:33:22 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:33:22 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:33:22 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:33:22 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:33:22 +06:00 successful request
+06/12/2023 01:33:22 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:33:22 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 82.7476ms
+06/12/2023 01:33:22 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:33:22 +06:00 Request GET /Home/NewBooks completed in 83 ms
+06/12/2023 01:33:22 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 84.5425ms
+06/12/2023 01:33:22 +06:00 Received HTTP response headers after 95.3939ms - 200
+06/12/2023 01:33:22 +06:00 End processing HTTP request after 95.8538ms - 200
+06/12/2023 01:33:22 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:33:22 +06:00 Request GET /health completed in 102 ms
+06/12/2023 01:33:22 +06:00 Received HTTP response headers after 104.5052ms - 200
+06/12/2023 01:33:22 +06:00 End processing HTTP request after 105.438ms - 200
+06/12/2023 01:33:22 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 102.6182ms
+06/12/2023 01:33:22 +06:00 Saved 6 entities to in-memory store.
+06/12/2023 01:33:37 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:33:37 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:33:37 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:33:37 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:33:37 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:33:37 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:33:37 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:33:37 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:33:37 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:33:37 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:33:37 +06:00 successful request
+06/12/2023 01:33:37 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:33:37 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 14.6393ms
+06/12/2023 01:33:37 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:33:37 +06:00 Request GET /Home/NewBooks completed in 14 ms
+06/12/2023 01:33:37 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 15.6636ms
+06/12/2023 01:33:37 +06:00 Received HTTP response headers after 20.5549ms - 200
+06/12/2023 01:33:37 +06:00 End processing HTTP request after 22.2575ms - 200
+06/12/2023 01:33:38 +06:00 Health check "PingToGoogle" with status Unhealthy completed after 57.4362ms with message '"0 ms."'
+06/12/2023 01:33:38 +06:00 Health check "PingToYandex" with status Unhealthy completed after 56.6035ms with message '"0 ms."'
+06/12/2023 01:33:38 +06:00 Health check "PingToBing" with status Unhealthy completed after 57.3218ms with message '"0 ms."'
+06/12/2023 01:33:38 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:33:38 +06:00 Request GET /health completed in 58 ms
+06/12/2023 01:33:38 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 503 - application/json 60.6216ms
+06/12/2023 01:33:38 +06:00 Received HTTP response headers after 65.862ms - 503
+06/12/2023 01:33:38 +06:00 End processing HTTP request after 66.1364ms - 503
+06/12/2023 01:33:38 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:33:38 +06:00 Saved 9 entities to in-memory store.
+06/12/2023 01:33:53 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:33:53 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:33:53 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:33:53 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:33:53 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:33:53 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:33:53 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:33:53 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:33:53 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:33:53 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:33:53 +06:00 successful request
+06/12/2023 01:33:53 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:33:53 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 19.3265ms
+06/12/2023 01:33:53 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:33:53 +06:00 Request GET /Home/NewBooks completed in 22 ms
+06/12/2023 01:33:53 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 22.2897ms
+06/12/2023 01:33:53 +06:00 Received HTTP response headers after 38.0737ms - 200
+06/12/2023 01:33:53 +06:00 End processing HTTP request after 48.2393ms - 200
+06/12/2023 01:33:53 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:33:53 +06:00 Request GET /health completed in 98 ms
+06/12/2023 01:33:53 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 98.8795ms
+06/12/2023 01:33:53 +06:00 Received HTTP response headers after 100.3347ms - 200
+06/12/2023 01:33:53 +06:00 End processing HTTP request after 100.7007ms - 200
+06/12/2023 01:33:53 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:33:53 +06:00 Saved 9 entities to in-memory store.
+06/12/2023 01:34:08 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:34:08 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:34:08 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:34:08 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:34:08 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:34:08 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:34:08 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:34:08 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:34:08 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:34:08 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:34:08 +06:00 successful request
+06/12/2023 01:34:08 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:34:08 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 20.2107ms
+06/12/2023 01:34:08 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:34:08 +06:00 Request GET /Home/NewBooks completed in 76 ms
+06/12/2023 01:34:08 +06:00 Received HTTP response headers after 82.7287ms - 200
+06/12/2023 01:34:08 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 77.1703ms
+06/12/2023 01:34:08 +06:00 End processing HTTP request after 87.6229ms - 200
+06/12/2023 01:34:08 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:34:08 +06:00 Request GET /health completed in 88 ms
+06/12/2023 01:34:08 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 89.0741ms
+06/12/2023 01:34:08 +06:00 Received HTTP response headers after 94.5156ms - 200
+06/12/2023 01:34:08 +06:00 End processing HTTP request after 95.0693ms - 200
+06/12/2023 01:34:08 +06:00 Saved 6 entities to in-memory store.
+06/12/2023 01:34:23 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:34:23 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:34:23 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:34:23 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:34:23 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:34:23 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:34:23 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:34:23 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:34:23 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:34:23 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:34:23 +06:00 successful request
+06/12/2023 01:34:23 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:34:23 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 43.9754ms
+06/12/2023 01:34:23 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:34:23 +06:00 Request GET /Home/NewBooks completed in 50 ms
+06/12/2023 01:34:23 +06:00 Received HTTP response headers after 52.3084ms - 200
+06/12/2023 01:34:23 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 51.1981ms
+06/12/2023 01:34:23 +06:00 End processing HTTP request after 54.4092ms - 200
+06/12/2023 01:34:23 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:34:23 +06:00 Request GET /health completed in 81 ms
+06/12/2023 01:34:23 +06:00 Received HTTP response headers after 84.5086ms - 200
+06/12/2023 01:34:23 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 82.5779ms
+06/12/2023 01:34:23 +06:00 End processing HTTP request after 86.2114ms - 200
+06/12/2023 01:34:23 +06:00 Saved 6 entities to in-memory store.
+06/12/2023 01:34:38 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:34:38 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:34:38 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:34:38 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:34:38 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:34:38 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:34:38 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:34:38 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:34:38 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:34:38 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:34:38 +06:00 successful request
+06/12/2023 01:34:38 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:34:38 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 19.6044ms
+06/12/2023 01:34:38 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:34:38 +06:00 Request GET /Home/NewBooks completed in 19 ms
+06/12/2023 01:34:38 +06:00 Received HTTP response headers after 21.3457ms - 200
+06/12/2023 01:34:38 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 20.1296ms
+06/12/2023 01:34:38 +06:00 End processing HTTP request after 25.1796ms - 200
+06/12/2023 01:34:38 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:34:38 +06:00 Request GET /health completed in 75 ms
+06/12/2023 01:34:38 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 77.5240ms
+06/12/2023 01:34:38 +06:00 Received HTTP response headers after 82.6366ms - 200
+06/12/2023 01:34:38 +06:00 End processing HTTP request after 82.8349ms - 200
+06/12/2023 01:34:38 +06:00 Saved 6 entities to in-memory store.
+06/12/2023 01:34:53 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:34:53 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:34:53 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:34:53 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:34:53 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:34:53 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:34:53 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:34:53 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:34:53 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:34:53 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:34:53 +06:00 successful request
+06/12/2023 01:34:53 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:34:53 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 6.7149ms
+06/12/2023 01:34:53 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:34:53 +06:00 Request GET /Home/NewBooks completed in 6 ms
+06/12/2023 01:34:53 +06:00 Received HTTP response headers after 16.9192ms - 200
+06/12/2023 01:34:53 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 7.2489ms
+06/12/2023 01:34:53 +06:00 End processing HTTP request after 17.9022ms - 200
+06/12/2023 01:34:53 +06:00 Health check "PingToYandex" with status Unhealthy completed after 24.6931ms with message '"0 ms."'
+06/12/2023 01:34:53 +06:00 Health check "PingToGoogle" with status Unhealthy completed after 25.8086ms with message '"0 ms."'
+06/12/2023 01:34:53 +06:00 Health check "PingToBing" with status Unhealthy completed after 25.4855ms with message '"0 ms."'
+06/12/2023 01:34:53 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:34:53 +06:00 Request GET /health completed in 26 ms
+06/12/2023 01:34:53 +06:00 Received HTTP response headers after 42.9588ms - 503
+06/12/2023 01:34:53 +06:00 End processing HTTP request after 43.1327ms - 503
+06/12/2023 01:34:53 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 503 - application/json 27.2763ms
+06/12/2023 01:34:53 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:34:53 +06:00 Saved 9 entities to in-memory store.
+06/12/2023 01:35:08 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:35:08 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:35:08 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:35:08 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:35:08 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:35:08 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:35:08 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:35:08 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:35:08 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:35:08 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:35:08 +06:00 successful request
+06/12/2023 01:35:08 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:35:08 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 20.8853ms
+06/12/2023 01:35:08 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:35:08 +06:00 Request GET /Home/NewBooks completed in 21 ms
+06/12/2023 01:35:08 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 24.0225ms
+06/12/2023 01:35:08 +06:00 Received HTTP response headers after 28.8436ms - 200
+06/12/2023 01:35:08 +06:00 End processing HTTP request after 30.145ms - 200
+06/12/2023 01:35:08 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:35:08 +06:00 Request GET /health completed in 75 ms
+06/12/2023 01:35:08 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 77.4140ms
+06/12/2023 01:35:08 +06:00 Received HTTP response headers after 82.2466ms - 200
+06/12/2023 01:35:08 +06:00 End processing HTTP request after 82.5735ms - 200
+06/12/2023 01:35:08 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:35:08 +06:00 Saved 9 entities to in-memory store.
+06/12/2023 01:35:23 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:35:23 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:35:23 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:35:23 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:35:23 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:35:23 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:35:23 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:35:23 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:35:23 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:35:23 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:35:23 +06:00 successful request
+06/12/2023 01:35:23 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:35:23 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 6.9652ms
+06/12/2023 01:35:23 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:35:23 +06:00 Request GET /Home/NewBooks completed in 7 ms
+06/12/2023 01:35:23 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 7.5844ms
+06/12/2023 01:35:23 +06:00 Received HTTP response headers after 12.6376ms - 200
+06/12/2023 01:35:23 +06:00 End processing HTTP request after 13.8697ms - 200
+06/12/2023 01:35:23 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:35:23 +06:00 Request GET /health completed in 77 ms
+06/12/2023 01:35:23 +06:00 Received HTTP response headers after 78.8744ms - 200
+06/12/2023 01:35:23 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 77.5365ms
+06/12/2023 01:35:23 +06:00 End processing HTTP request after 79.0837ms - 200
+06/12/2023 01:35:23 +06:00 Saved 6 entities to in-memory store.
+06/12/2023 01:35:38 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:35:38 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:35:38 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:35:38 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:35:38 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:35:38 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:35:38 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:35:38 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:35:38 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:35:38 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:35:38 +06:00 successful request
+06/12/2023 01:35:38 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:35:38 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 24.6489ms
+06/12/2023 01:35:38 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:35:38 +06:00 Request GET /Home/NewBooks completed in 24 ms
+06/12/2023 01:35:38 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 26.2587ms
+06/12/2023 01:35:38 +06:00 Received HTTP response headers after 30.6288ms - 200
+06/12/2023 01:35:38 +06:00 End processing HTTP request after 31.4245ms - 200
+06/12/2023 01:35:38 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:35:38 +06:00 Request GET /health completed in 86 ms
+06/12/2023 01:35:38 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 86.4721ms
+06/12/2023 01:35:38 +06:00 Received HTTP response headers after 91.4413ms - 200
+06/12/2023 01:35:38 +06:00 End processing HTTP request after 91.9383ms - 200
+06/12/2023 01:35:38 +06:00 Saved 6 entities to in-memory store.
+06/12/2023 01:35:49 +06:00 Request starting HTTP/2 GET https://localhost:7087/Home/testo?bookName=%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80%20%D0%B8%20%D0%9C%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D1%82%D0%B0 - -
+06/12/2023 01:35:49 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.Jsonius (BookShopApi)"'
+06/12/2023 01:35:49 +06:00 Route matched with "{action = \"Jsonius\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Jsonius(System.String)" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:37:26 +06:00 Adding system services
+06/12/2023 01:37:27 +06:00 Adding custom services
+06/12/2023 01:37:29 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06/12/2023 01:37:29 +06:00 Initializing UI Database
+06/12/2023 01:37:30 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:37:31 +06:00 Saving healthchecks configuration to database
+06/12/2023 01:37:31 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:37:31 +06:00 Now listening on: "https://localhost:7087"
+06/12/2023 01:37:31 +06:00 Now listening on: "http://localhost:5087"
+06/12/2023 01:37:31 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:37:31 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:37:31 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:37:32 +06:00 Application started. Press Ctrl+C to shut down.
+06/12/2023 01:37:32 +06:00 Hosting environment: "Development"
+06/12/2023 01:37:32 +06:00 Content root path: "E:\2023\ASP\BookShopProject\BookShopApi\BookShopApi\"
+06/12/2023 01:37:32 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:37:32 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+06/12/2023 01:37:32 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:37:32 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:37:32 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:37:33 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:37:33 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:37:33 +06:00 Health check "PingToYandex" with status Unhealthy completed after 1016.6075ms with message '"0 ms."'
+06/12/2023 01:37:33 +06:00 Health check "PingToBing" with status Unhealthy completed after 1022.7589ms with message '"0 ms."'
+06/12/2023 01:37:33 +06:00 Health check "PingToGoogle" with status Unhealthy completed after 1044.7909ms with message '"0 ms."'
+06/12/2023 01:37:33 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:37:33 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 1634.1246ms
+06/12/2023 01:37:33 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+06/12/2023 01:37:33 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 12.4379ms
+06/12/2023 01:37:33 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+06/12/2023 01:37:34 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 277.8104ms
+06/12/2023 01:37:34 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+06/12/2023 01:37:34 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 320.8835ms
+06/12/2023 01:37:34 +06:00 successful request
+06/12/2023 01:37:35 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:37:35 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 2137.5136ms
+06/12/2023 01:37:35 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:37:35 +06:00 Request GET /Home/NewBooks completed in 2178 ms
+06/12/2023 01:37:35 +06:00 Received HTTP response headers after 3216.8633ms - 200
+06/12/2023 01:37:35 +06:00 End processing HTTP request after 3224.5963ms - 200
+06/12/2023 01:37:35 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 2189.1929ms
+06/12/2023 01:37:35 +06:00 Health check "RequestTimeCheck" with status Degraded completed after 3231.4049ms with message '"Могло быть и лучше"'
+06/12/2023 01:37:35 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:37:35 +06:00 Request GET /health completed in 3291 ms
+06/12/2023 01:37:35 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 503 - application/json 3428.5354ms
+06/12/2023 01:37:35 +06:00 Received HTTP response headers after 3811.1864ms - 503
+06/12/2023 01:37:35 +06:00 End processing HTTP request after 3848.2386ms - 503
+06/12/2023 01:37:35 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:37:36 +06:00 Saved 6 entities to in-memory store.
+06/12/2023 01:37:43 +06:00 Request starting HTTP/2 GET https://localhost:7087/Home/testo - -
+06/12/2023 01:37:43 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.Jsonius (BookShopApi)"'
+06/12/2023 01:37:43 +06:00 Route matched with "{action = \"Jsonius\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Jsonius(System.String)" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:37:43 +06:00 Executing "BadRequestObjectResult", writing value of type '"Microsoft.AspNetCore.Mvc.ValidationProblemDetails"'.
+06/12/2023 01:37:43 +06:00 Executed action "BookShopApi.Controllers.HomeController.Jsonius (BookShopApi)" in 425.868ms
+06/12/2023 01:37:43 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.Jsonius (BookShopApi)"'
+06/12/2023 01:37:43 +06:00 Request GET /Home/testo completed in 462 ms
+06/12/2023 01:37:43 +06:00 Request finished HTTP/2 GET https://localhost:7087/Home/testo - - - 400 - application/problem+json;+charset=utf-8 465.4955ms
+06/12/2023 01:37:51 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:37:51 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:37:51 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:37:51 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:37:51 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:37:51 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:37:51 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:37:51 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:37:51 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:37:51 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:37:51 +06:00 successful request
+06/12/2023 01:37:51 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:37:51 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 109.5115ms
+06/12/2023 01:37:51 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:37:51 +06:00 Request GET /Home/NewBooks completed in 110 ms
+06/12/2023 01:37:51 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 111.1218ms
+06/12/2023 01:37:51 +06:00 Received HTTP response headers after 114.1025ms - 200
+06/12/2023 01:37:51 +06:00 End processing HTTP request after 116.3669ms - 200
+06/12/2023 01:37:51 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:37:51 +06:00 Request GET /health completed in 119 ms
+06/12/2023 01:37:51 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 119.6829ms
+06/12/2023 01:37:51 +06:00 Received HTTP response headers after 120.2217ms - 200
+06/12/2023 01:37:51 +06:00 End processing HTTP request after 120.469ms - 200
+06/12/2023 01:37:51 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:37:51 +06:00 Saved 10 entities to in-memory store.
+06/12/2023 01:38:06 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:38:06 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:38:06 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:38:06 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:38:06 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:38:06 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:38:06 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:38:06 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:38:06 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:38:06 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:38:06 +06:00 successful request
+06/12/2023 01:38:06 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:38:06 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 18.3945ms
+06/12/2023 01:38:06 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:38:06 +06:00 Request GET /Home/NewBooks completed in 18 ms
+06/12/2023 01:38:06 +06:00 Received HTTP response headers after 23.5407ms - 200
+06/12/2023 01:38:06 +06:00 End processing HTTP request after 25.1954ms - 200
+06/12/2023 01:38:06 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 19.0723ms
+06/12/2023 01:38:06 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:38:06 +06:00 Request GET /health completed in 74 ms
+06/12/2023 01:38:06 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 74.6745ms
+06/12/2023 01:38:06 +06:00 Received HTTP response headers after 76.0116ms - 200
+06/12/2023 01:38:06 +06:00 End processing HTTP request after 76.2558ms - 200
+06/12/2023 01:38:06 +06:00 Saved 6 entities to in-memory store.
+06/12/2023 01:38:21 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:38:21 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:38:21 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:38:21 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:38:21 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:38:21 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:38:21 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:38:21 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:38:21 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:38:21 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:38:21 +06:00 successful request
+06/12/2023 01:38:21 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:38:21 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 20.9441ms
+06/12/2023 01:38:21 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:38:21 +06:00 Request GET /Home/NewBooks completed in 21 ms
+06/12/2023 01:38:21 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 23.2664ms
+06/12/2023 01:38:21 +06:00 Received HTTP response headers after 30.8326ms - 200
+06/12/2023 01:38:21 +06:00 End processing HTTP request after 40.3212ms - 200
+06/12/2023 01:38:21 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:38:21 +06:00 Request GET /health completed in 86 ms
+06/12/2023 01:38:21 +06:00 Received HTTP response headers after 91.2506ms - 200
+06/12/2023 01:38:21 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 86.6801ms
+06/12/2023 01:38:21 +06:00 End processing HTTP request after 91.4453ms - 200
+06/12/2023 01:38:21 +06:00 Saved 6 entities to in-memory store.
+06/12/2023 01:38:27 +06:00 Request starting HTTP/2 GET https://localhost:7087/Home/testo?bookName=%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80%20%D0%B8%20%D0%9C%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D1%82%D0%B0 - -
+06/12/2023 01:38:27 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.Jsonius (BookShopApi)"'
+06/12/2023 01:38:27 +06:00 Route matched with "{action = \"Jsonius\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Jsonius(System.String)" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:40:36 +06:00 Adding system services
+06/12/2023 01:40:36 +06:00 Adding custom services
+06/12/2023 01:40:37 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06/12/2023 01:40:38 +06:00 Initializing UI Database
+06/12/2023 01:40:39 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:40:39 +06:00 Saving healthchecks configuration to database
+06/12/2023 01:40:40 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:40:40 +06:00 Now listening on: "https://localhost:7087"
+06/12/2023 01:40:40 +06:00 Now listening on: "http://localhost:5087"
+06/12/2023 01:40:40 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:40:40 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:40:40 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:40:40 +06:00 Application started. Press Ctrl+C to shut down.
+06/12/2023 01:40:40 +06:00 Hosting environment: "Development"
+06/12/2023 01:40:40 +06:00 Content root path: "E:\2023\ASP\BookShopProject\BookShopApi\BookShopApi\"
+06/12/2023 01:40:41 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:40:41 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+06/12/2023 01:40:41 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:40:41 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:40:41 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:40:41 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:40:41 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:40:41 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:40:41 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 833.8995ms
+06/12/2023 01:40:42 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+06/12/2023 01:40:42 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 60.0939ms
+06/12/2023 01:40:42 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+06/12/2023 01:40:42 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 208.0123ms
+06/12/2023 01:40:43 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+06/12/2023 01:40:43 +06:00 successful request
+06/12/2023 01:40:43 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 390.2629ms
+06/12/2023 01:40:44 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:40:44 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 2875.0393ms
+06/12/2023 01:40:44 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:40:44 +06:00 Request GET /Home/NewBooks completed in 2934 ms
+06/12/2023 01:40:44 +06:00 Received HTTP response headers after 3005.9931ms - 200
+06/12/2023 01:40:44 +06:00 End processing HTTP request after 3016.0883ms - 200
+06/12/2023 01:40:44 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 2951.3180ms
+06/12/2023 01:40:44 +06:00 Health check "RequestTimeCheck" with status Degraded completed after 3026.4755ms with message '"Могло быть и лучше"'
+06/12/2023 01:40:44 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:40:44 +06:00 Request GET /health completed in 3128 ms
+06/12/2023 01:40:44 +06:00 Received HTTP response headers after 3803.5902ms - 200
+06/12/2023 01:40:44 +06:00 End processing HTTP request after 3822.4393ms - 200
+06/12/2023 01:40:44 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 3284.9600ms
+06/12/2023 01:40:44 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:40:44 +06:00 Saved 6 entities to in-memory store.
+06/12/2023 01:40:51 +06:00 Request starting HTTP/2 GET https://localhost:7087/Home/testo?bookName=%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80%20%D0%B8%20%D0%9C%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D1%82%D0%B0 - -
+06/12/2023 01:40:51 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.Jsonius (BookShopApi)"'
+06/12/2023 01:40:51 +06:00 Route matched with "{action = \"Jsonius\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Jsonius(System.String)" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:43:44 +06:00 Adding system services
+06/12/2023 01:43:45 +06:00 Adding custom services
+06/12/2023 01:43:45 +06:00 User profile is available. Using '"C:\Users\user\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+06/12/2023 01:43:46 +06:00 Initializing UI Database
+06/12/2023 01:43:49 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:43:49 +06:00 Saving healthchecks configuration to database
+06/12/2023 01:43:49 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:43:50 +06:00 Now listening on: "https://localhost:7087"
+06/12/2023 01:43:50 +06:00 Now listening on: "http://localhost:5087"
+06/12/2023 01:43:50 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:43:50 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:43:50 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:43:50 +06:00 Application started. Press Ctrl+C to shut down.
+06/12/2023 01:43:50 +06:00 Hosting environment: "Development"
+06/12/2023 01:43:50 +06:00 Content root path: "E:\2023\ASP\BookShopProject\BookShopApi\BookShopApi\"
+06/12/2023 01:43:50 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/index.html - -
+06/12/2023 01:43:50 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:43:50 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:43:50 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:43:50 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:43:50 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:43:50 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:43:50 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:43:51 +06:00 Request starting HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - -
+06/12/2023 01:43:51 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/index.html - - - 200 - text/html;charset=utf-8 736.5043ms
+06/12/2023 01:43:51 +06:00 Request finished HTTP/2 GET https://localhost:7087/_framework/aspnetcore-browser-refresh.js - - - 200 11991 application/javascript;+charset=utf-8 7.6188ms
+06/12/2023 01:43:51 +06:00 Request starting HTTP/2 GET https://localhost:7087/_vs/browserLink - -
+06/12/2023 01:43:51 +06:00 Request finished HTTP/2 GET https://localhost:7087/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 107.2336ms
+06/12/2023 01:43:51 +06:00 Request starting HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - -
+06/12/2023 01:43:52 +06:00 Request finished HTTP/2 GET https://localhost:7087/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 333.8834ms
+06/12/2023 01:43:52 +06:00 successful request
+06/12/2023 01:43:52 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:43:52 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 2005.2451ms
+06/12/2023 01:43:52 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:43:52 +06:00 Request GET /Home/NewBooks completed in 2064 ms
+06/12/2023 01:43:52 +06:00 Received HTTP response headers after 2151.8481ms - 200
+06/12/2023 01:43:52 +06:00 End processing HTTP request after 2159.4786ms - 200
+06/12/2023 01:43:52 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 2075.5749ms
+06/12/2023 01:43:52 +06:00 Health check "RequestTimeCheck" with status Degraded completed after 2165.9657ms with message '"Могло быть и лучше"'
+06/12/2023 01:43:52 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:43:52 +06:00 Request GET /health completed in 2246 ms
+06/12/2023 01:43:52 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 2384.8871ms
+06/12/2023 01:43:52 +06:00 Received HTTP response headers after 2806.4533ms - 200
+06/12/2023 01:43:52 +06:00 End processing HTTP request after 2822.5643ms - 200
+06/12/2023 01:43:53 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:43:53 +06:00 Saved 6 entities to in-memory store.
+06/12/2023 01:44:08 +06:00 Entity Framework Core "6.0.16" initialized '"HealthChecksDb"' using provider '"Microsoft.EntityFrameworkCore.InMemory":"6.0.7"' with options: "StoreName=HealthChecksUI "
+06/12/2023 01:44:08 +06:00 Start processing HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:44:08 +06:00 Sending HTTP request "GET" https://localhost:7087/health
+06/12/2023 01:44:08 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/health - -
+06/12/2023 01:44:08 +06:00 Executing endpoint '"Health checks"'
+06/12/2023 01:44:08 +06:00 Start processing HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:44:08 +06:00 Sending HTTP request "GET" https://localhost:7087/Home/NewBooks
+06/12/2023 01:44:08 +06:00 Request starting HTTP/1.1 GET https://localhost:7087/Home/NewBooks - -
+06/12/2023 01:44:08 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:44:08 +06:00 Route matched with "{action = \"GetBooks\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.List`1[BookShop.Domain.BookGenre]]] GetBooks()" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").
+06/12/2023 01:44:08 +06:00 successful request
+06/12/2023 01:44:08 +06:00 Executing "ObjectResult", writing value of type '"System.Collections.Generic.List`1[[BookShop.Domain.BookGenre, BookShop.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]"'.
+06/12/2023 01:44:08 +06:00 Executed action "BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)" in 11.8721ms
+06/12/2023 01:44:08 +06:00 Executed endpoint '"BookShopApi.Controllers.HomeController.GetBooks (BookShopApi)"'
+06/12/2023 01:44:08 +06:00 Request GET /Home/NewBooks completed in 12 ms
+06/12/2023 01:44:08 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/Home/NewBooks - - - 200 - application/json;+charset=utf-8 13.8705ms
+06/12/2023 01:44:08 +06:00 Received HTTP response headers after 20.1793ms - 200
+06/12/2023 01:44:08 +06:00 End processing HTTP request after 20.8107ms - 200
+06/12/2023 01:44:08 +06:00 Executed endpoint '"Health checks"'
+06/12/2023 01:44:08 +06:00 Request GET /health completed in 77 ms
+06/12/2023 01:44:08 +06:00 Received HTTP response headers after 79.2818ms - 200
+06/12/2023 01:44:08 +06:00 Request finished HTTP/1.1 GET https://localhost:7087/health - - - 200 - application/json 78.4128ms
+06/12/2023 01:44:08 +06:00 End processing HTTP request after 79.5353ms - 200
+06/12/2023 01:44:08 +06:00 Saved 1 entities to in-memory store.
+06/12/2023 01:44:08 +06:00 Saved 7 entities to in-memory store.
+06/12/2023 01:44:17 +06:00 Request starting HTTP/2 GET https://localhost:7087/Home/testo?bookName=%D0%9C%D0%B0%D1%81%D1%82%D0%B5%D1%80%20%D0%B8%20%D0%9C%D0%B0%D1%80%D0%B3%D0%B0%D1%80%D0%B8%D1%82%D0%B0 - -
+06/12/2023 01:44:17 +06:00 Executing endpoint '"BookShopApi.Controllers.HomeController.Jsonius (BookShopApi)"'
+06/12/2023 01:44:17 +06:00 Route matched with "{action = \"Jsonius\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.String]] Jsonius(System.String)" on controller "BookShopApi.Controllers.HomeController" ("BookShopApi").

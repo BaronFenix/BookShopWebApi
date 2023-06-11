@@ -14,12 +14,14 @@ namespace BookShop.Infrastructure
     {
         internal DbContext context;
 
+        private readonly ApplicationContext _appContext;
+
         private BookRepository bookRepository;
         private CategoryRepository categoryRepository;
         private BusketRepository busketRepository;
 
 
-        public StoreService(DbContext context)
+        public StoreService(ApplicationContext context)
         {
             this.context = context;
         }
@@ -30,6 +32,8 @@ namespace BookShop.Infrastructure
             
             busketRepository.context.FindAsync<Busket>(0);
 
+
+            
 
             using (ApplicationContext appCont = new ApplicationContext())
             {

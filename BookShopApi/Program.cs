@@ -5,8 +5,11 @@ using BookShop.Infrastructure.Repositories;
 using BookShopApi.Middleware;
 using BookShopApi.Models;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Identity.Client;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using HealthChecks.UI.Client;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -43,22 +46,38 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             ValidateIssuerSigningKey = true,
         };
     });
-builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
 
 
 try
 {
-    Log.Information("Adding services");
+    Log.Information("Adding system services");
+
+    builder.Services.AddControllers();
+    builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddSwaggerGen();
+
+    builder.Services.AddMemoryCache();
+
+    builder.Services.AddHealthChecks()
+        //.AddSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"))
+        .AddCheck<RequestTimeHealthCheck>("RequestTimeCheck")
+        .AddCheck<DbHealthCheck>("DbCheck")
+        .AddCheck("PingToGoogle", new PingHealthCheck(builder.Configuration["PingHealthChecks:PingGoogle"], 100))
+        .AddCheck("PingToBing", new PingHealthCheck(builder.Configuration["PingHealthChecks:PingBing"], 100))
+        .AddCheck("PingToYandex", new PingHealthCheck(builder.Configuration["PingHealthChecks:PingYandex"], 100));
+
+
+    builder.Services.AddHealthChecksUI().AddInMemoryStorage();
+
+    builder.Services.AddHttpClient();
+
 
     builder.Configuration.AddJsonFile("marketsettings.json");
-    builder.Services.Configure<PriceSettings>(builder.Configuration);
+    builder.Services.Configure<MarketSettings>(builder.Configuration);
 
-    builder.Services.AddHealthChecks();
-    //builder.Services.AddHostedService<MyHealthCheck>();
+    Log.Information("Adding custom services");
+
 
     builder.Services.AddDbContext<ApplicationContext>();
 
@@ -78,6 +97,17 @@ catch
 
 var app = builder.Build();
 
+//app.MapHealthChecks("/health");
+app.UseRateLimit();
+
+
+app.MapHealthChecks("/health", new HealthCheckOptions
+{
+    Predicate = _ => true,
+    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+});
+app.MapHealthChecksUI();
+
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -93,5 +123,6 @@ app.UseAuthorization();
 app.UseAuthorization();
 
 app.MapControllers();
+
 
 app.Run();

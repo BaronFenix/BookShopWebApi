@@ -4,9 +4,12 @@ using BookShop.Domain;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace BookShopApi.Controllers
 {
+    [ApiController]
+    [Route("[controller]")]
     public class BooksController : ControllerBase
     {
         private readonly ILogger<GenresController> _logger;
@@ -18,6 +21,7 @@ namespace BookShopApi.Controllers
         private readonly IPriceRepository _priceRepository;
 
         private readonly Microsoft.AspNetCore.Hosting.IHostingEnvironment _hostingEnvironment;
+        private readonly IMemoryCache _memoryCache; 
 
         public BooksController(
             ILogger<GenresController> logger,
@@ -27,7 +31,8 @@ namespace BookShopApi.Controllers
             IBookGenreRepository bookGenreRepository,
             IBookAuthorRepository bookAuthorRepository,
             IPriceRepository priceRepository,
-            Microsoft.AspNetCore.Hosting.IHostingEnvironment hostEnvironment)
+            Microsoft.AspNetCore.Hosting.IHostingEnvironment hostEnvironment,
+            IMemoryCache memoryCache)
         {
             _logger = logger;
             _categoryRepository = categoryRepository;
@@ -37,14 +42,27 @@ namespace BookShopApi.Controllers
             _bookAuthorRepository = bookAuthorRepository;
             _priceRepository = priceRepository;
             _hostingEnvironment = hostEnvironment;
+            _memoryCache = memoryCache;
         }
 
-
-
-        public IActionResult Index()
+        [HttpGet("{id}", Name = "GetBookById")]
+        public async Task<ActionResult<Book>> GetById(int id)
         {
-            return Ok();
+            bool productIsGet = _memoryCache.TryGetValue(id, out Book? memoryProduct); // Ищем книгу в ОЗУ
+
+            if (productIsGet) // Если она найдена сразу возвращаем
+                return Ok(_memoryCache.Get(id));
+
+            // если нет, то вытаскиваем ее из базы и записываем в озу
+            Book book = await _bookRepository.GetById(id); 
+            if (book != null)
+            {
+                _memoryCache.Set(book.Id, book, new MemoryCacheEntryOptions().SetAbsoluteExpiration(TimeSpan.FromMinutes(5)));
+                return Ok(_memoryCache.Get(id));
+            }
+            else return NotFound();
         }
+
 
         [HttpGet("GetPrices")]
         public async Task<ActionResult<List<Price>>> Price()
@@ -186,68 +204,76 @@ namespace BookShopApi.Controllers
         [HttpGet("UploadPricesToDbFromFile")]
         public async Task<ActionResult> PriceParses(string fileName)
         {
-            string filePath = Path.Combine(_hostingEnvironment.WebRootPath, "Files");
-            filePath += $"\\{fileName}.csv";
-            List<string> data;
             try
             {
-                data = System.IO.File.ReadAllLines(filePath).ToList();
-                data.RemoveAt(0); // Убираем строку с названиями столбцов
-            }
-            catch
-            {
-                return BadRequest(new { ErrorText = "Файл не найден" });
-            }
-
-            List<decimal> csvPrices = new List<decimal>();
-            List<Book> csvBooks = new List<Book>();
-
-            foreach (string row in data)
-            {
-                List<string> dataField = row.Replace("\"", "").Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries).ToList();
-
-                csvBooks.Add(new Book
+                string filePath = Path.Combine(_hostingEnvironment.WebRootPath, "Files");
+                filePath += $"\\{fileName}.csv";
+                List<string> data;
+                try
                 {
-                    Title = dataField[0],
-                    PublishedYear = Convert.ToInt32(dataField[1]),
-                    PublishName = dataField[2],
-                    Description = "-",
-                    Pages = 0,
-                    ImageUrl = "#"
-                });
-                csvPrices.Add(Convert.ToDecimal(dataField[3]));
-            }
-
-            for (int i = 0; i < csvBooks.Count; i++)
-            {
-                Book? book = _bookRepository.Get(p => 
-                                                    p.Title == csvBooks[i].Title &&
-                                                    p.PublishedYear == csvBooks[i].PublishedYear &&
-                                                    p.PublishName == csvBooks[i].PublishName
-                                                ).Result.FirstOrDefault();
-                if (book == null)
-                    continue;
-
-                Price bookPrice = await _priceRepository.GetByBookId(book.Id);
-                if(bookPrice != null)
-                {
-                    if (bookPrice.Total == csvPrices[i])
-                        continue;
-                    bookPrice.Total = csvPrices[i];
-                    await _priceRepository.Update(bookPrice);
+                    data = System.IO.File.ReadAllLines(filePath).ToList();
+                    data.RemoveAt(0); // Убираем строку с названиями столбцов
                 }
-                else
+                catch
                 {
-                    await _priceRepository.Insert(new Price 
+                    return BadRequest(new { ErrorText = "Файл не найден" });
+                }
+
+                List<decimal> csvPrices = new List<decimal>();
+                List<Book> csvBooks = new List<Book>();
+
+                foreach (string row in data)
+                {
+                    List<string> dataField = row.Replace("\"", "").Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+
+                    csvBooks.Add(new Book
                     {
-                        Book = book,
-                        Total = csvPrices[i]
+                        Title = dataField[0],
+                        PublishedYear = Convert.ToInt32(dataField[1]),
+                        PublishName = dataField[2],
+                        Description = "-",
+                        Pages = 0,
+                        ImageUrl = "#"
                     });
+                    csvPrices.Add(Convert.ToDecimal(dataField[3]));
                 }
-                
-            }
 
-            return Ok();
+                for (int i = 0; i < csvBooks.Count; i++)
+                {
+                    Book? book = _bookRepository.Get(p =>
+                                                        p.Title == csvBooks[i].Title &&
+                                                        p.PublishedYear == csvBooks[i].PublishedYear &&
+                                                        p.PublishName == csvBooks[i].PublishName
+                                                    ).Result.FirstOrDefault();
+                    if (book == null)
+                        continue;
+
+                    Price bookPrice = await _priceRepository.GetByBookId(book.Id);
+                    if (bookPrice != null)
+                    {
+                        if (bookPrice.Total == csvPrices[i])
+                            continue;
+                        bookPrice.Total = csvPrices[i];
+                        await _priceRepository.Update(bookPrice);
+                    }
+                    else
+                    {
+                        await _priceRepository.Insert(new Price
+                        {
+                            Book = book,
+                            Total = csvPrices[i]
+                        });
+                    }
+
+                }
+                _logger.LogInformation("Successful request");
+                return Ok("Цены успешно добавлены/обновлены");
+            }
+            catch(Exception ex)
+            {
+                _logger.LogError("Request fail");
+                return BadRequest(ex.Message);
+            }
         }
 
     }
